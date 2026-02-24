@@ -1,0 +1,3 @@
+repository "An Invitation/An Invitation@2475662355498@cloud"
+  path "/"
+    smartbranch "/main/Shanshan"
