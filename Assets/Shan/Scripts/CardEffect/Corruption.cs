@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Corruption", menuName = "Scriptable Objects/Combo/Corruption")]
 public class Corruption : Combo
 {
     public override void Execute(ItemCardData cd = null)

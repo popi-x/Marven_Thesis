@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 public enum LevelState
 {
@@ -22,6 +23,9 @@ public class LevelManager : MonoBehaviour
     public List<EventCardData> playedEventCards = new List<EventCardData>(); //Delete after playing item cards
     public List<ItemCardData> playedItemCards = new List<ItemCardData>();
     public int rewardCnt = 2; //the number of reward cards to choose from after winning a level, can be changed by some item cards
+    public int shopRefreshTimes = 0;
+    public int maxCardsBought = 10;
+    public int shopCardAmt = 4;
 
     public double targetScore
     {
@@ -32,6 +36,7 @@ public class LevelManager : MonoBehaviour
     public double totalMult = 1;
     public double totalPlus = 0;
 
+
     [SerializeField] private double _targetScore = 10;
     [SerializeField] private double _curScore = 0;
 
@@ -41,6 +46,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private List<ItemCardData> _earnedItemCards = new List<ItemCardData>(); //item cards earned by playing event cards, will be added to owned item cards after this level
     [SerializeField] private List<ItemCardData> _rewardItemCard;
     [SerializeField] private ItemCardData _badRewardItemCard;
+    [SerializeField] private LevelModifier _LM;
+
+    private int cardBoughtCnt = 0;
+
 
     private void Awake()
     {
@@ -57,10 +66,34 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         Debug.Log("Game Starts!");
-        Debug.Log("Your Enemy is " + enemyName);
-        Debug.Log(enemyDescription);
-        Debug.Log("Press space to start shopping.");
+        Reset();   
+    }
+
+    private void Reset()
+    {
+         //Remove played cards from owned cards
+        _OwnedEventCards.RemoveAll(x => playedEventCards.Contains(x));
+        _OwnedItemCards.RemoveAll(x => playedItemCards.Contains(x));
+
+        //Clear played cards and add earned item cards to owned item cards
+        playedEventCards.Clear();
+        playedItemCards.Clear();
+        _earnedItemCards.Clear();
+        totalMult = 1;
+        totalPlus = 0;
+
+        //reset money, shopRefreshTimes, rewardCnt, targetScore, _curScore
+        shopRefreshTimes = 0;
+        rewardCnt = 2;
+        targetScore = 10;
+        _curScore = 0;
+
         
+
+        Debug.Log("Admin: choose the enemy. Press space after you finish.");
+
+        //Resetting the state is always the last thing to do
+        _curLevelState = LevelState.Intro;
     }
 
 
@@ -68,7 +101,23 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_curLevelState == LevelState.Shop)
+        if (_curLevelState == LevelState.Intro)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _LM.Apply();
+                Debug.Log("Your Enemy is " + enemyName);
+                Debug.Log(enemyDescription);
+
+                //Refresh Shop
+                CardsInShop = CardDeckManager.instance.RandomDrawEventCards(shopCardAmt);
+
+                Debug.Log("Press space to start shopping.");
+                _curLevelState = LevelState.Shop;
+            }
+        }
+
+        else if (_curLevelState == LevelState.Shop)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -78,24 +127,30 @@ public class LevelManager : MonoBehaviour
                 {
                     Debug.Log(CardsInShop[i].cardName + "    " + CardsInShop[i].price + "    " + CardsInShop[i].mult);
                 }
-                Debug.Log("Press according number to buy cards.");
+                Debug.Log("Press according number to buy cards. There is only one card for each");
+                Debug.Log("You have " + money + " coin.");
                 Debug.Log("When you finish shopping, press N to start choosing event cards.");
             }
+
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 Shopping(1);
+                _LM.OnCardBought();
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 Shopping(2);
+                _LM.OnCardBought();
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 Shopping(3);
+                _LM.OnCardBought();
             }
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 Shopping(4);
+                _LM.OnCardBought();
             }
             if (Input.GetKeyDown(KeyCode.N))
             {
@@ -229,6 +284,15 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+   
+    //play single event card
+    public void PlayEventCard(EventCardData card)
+    {
+        Debug.Log("You played " + card.cardName);
+        totalMult *= card.mult;
+        _earnedItemCards.Add(card.itemCard);
+    }
+
     public void PlayEventCards()
     {
         for (int i = 0; i < playedEventCards.Count; i++)
@@ -260,13 +324,17 @@ public class LevelManager : MonoBehaviour
                 totalPlus = 0;
                 return;
             }
+            _LM.OnItemCardPlayed();
         }
     }
 
     public void Calculate()
     {
+        Debug.Log("Total Multiplier is " + totalMult);
+        Debug.Log("Total Plus is " + totalPlus);
         _curScore = totalMult * totalPlus;
         Debug.Log("Your score is " + _curScore);
+
         if (_curScore >= _targetScore)
         {
             Debug.Log("You win!");
@@ -276,7 +344,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             Debug.Log("You lose!");
-            _curLevelState = LevelState.Intro;
+            Reset();
         }
     }
 
@@ -297,8 +365,14 @@ public class LevelManager : MonoBehaviour
         totalMult = 1;
         totalPlus = 0;
 
+        //reset money, shopRefreshTimes, rewardCnt, targetScore, _curScore
+        shopRefreshTimes = 0;
+        rewardCnt = 2;
+        targetScore = 10;
+        _curScore = 0;
+
         //Resetting the state is always the last thing to do
-        _curLevelState = LevelState.Shop;
+        _curLevelState = LevelState.Intro;
     }
 
     

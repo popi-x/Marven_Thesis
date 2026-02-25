@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-[CreateAssetMenu(fileName = "CrystalCombo", menuName = "Scriptable Objects/Combo/Crystal")]
+[CreateAssetMenu(fileName = "CrystalCombo", menuName = "Scriptable Objects/Combo/CrystalCombo")]
 public class CrystalCombo : Combo
 {
 
