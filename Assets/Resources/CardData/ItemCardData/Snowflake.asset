@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a9ca50c074abf4099aee016ba8f726, type: 3}
   m_Name: Snowflake
   m_EditorClassIdentifier: Assembly-CSharp::ItemCardData
+  disposable: 0
   _cardName: Snowflake
-  _cardImage: {fileID: 0}
+  _cardImage: {fileID: -3457482457770744763, guid: 3d92a3f35fbe84b77b94a8831d188465, type: 3}
+  _copies: 2
+  original: {fileID: 0}
   _plus: 5
   _description: 
   _combo: {fileID: 11400000, guid: e29155d074ad48b49add63517da5956b, type: 2}
+  comboDisabled: 1
+  plusModified: 0
+  bonusPlus: 0

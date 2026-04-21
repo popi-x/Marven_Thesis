@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 723f937aa50aa428cab7abeb3545dfe6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1959136714395823900
+    second: light_on_0
+  - first:
+      213: -4819715033892480671
+    second: light_on_1
+  - first:
+      213: -1065860624559444857
+    second: light_on_2
+  - first:
+      213: -1270771958199794960
+    second: light_on_3
+  - first:
+      213: 4537720778404487952
+    second: light_on_4
+  - first:
+      213: 6076966675592461052
+    second: light_on_5
+  - first:
+      213: -8868391940205187236
+    second: light_on_6
+  - first:
+      213: 1980107169864640334
+    second: light_on_7
+  - first:
+      213: 1798509440284664542
+    second: light_on_8
+  - first:
+      213: -40895175553780645
+    second: light_on_9
+  - first:
+      213: 7377843308690042363
+    second: light_on_10
+  - first:
+      213: 606084908141719690
+    second: light_on_11
+  - first:
+      213: -1570530255564523446
+    second: light_on_12
+  - first:
+      213: -163069752662732519
+    second: light_on_13
+  - first:
+      213: 3479831818283774046
+    second: light_on_14
+  - first:
+      213: 7482046067094290780
+    second: light_on_15
+  - first:
+      213: -2030980766558107583
+    second: light_on_16
+  - first:
+      213: -8288330405090323493
+    second: light_on_17
+  - first:
+      213: -6945435793764421951
+    second: light_on_18
+  - first:
+      213: 1334387568242541506
+    second: light_on_19
+  - first:
+      213: -9107147232821099310
+    second: light_on_20
+  - first:
+      213: -1854171733045390654
+    second: light_on_21
+  - first:
+      213: -1819980771714104035
+    second: light_on_22
+  - first:
+      213: -8422868739235363265
+    second: light_on_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: light_on_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0d208c98fbfc4e0800000000000000
+      internalID: -1959136714395823900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1699a3e66beec1db0800000000000000
+      internalID: -4819715033892480671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cee0db86d4531f0800000000000000
+      internalID: -1065860624559444857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f249f803af4d5ee0800000000000000
+      internalID: -1270771958199794960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01365be810939fe30800000000000000
+      internalID: 4537720778404487952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa339a8ef8b55450800000000000000
+      internalID: 6076966675592461052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_6
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fe12364842de480800000000000000
+      internalID: -8868391940205187236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_7
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e476cfcdaf0ca7b10800000000000000
+      internalID: 1980107169864640334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2aa599ec695f810800000000000000
+      internalID: 1798509440284664542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_9
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54f614fd06be6ff0800000000000000
+      internalID: -40895175553780645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_10
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd66f6566d536660800000000000000
+      internalID: 7377843308690042363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a803385430f396800800000000000000
+      internalID: 606084908141719690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_12
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48b218bd0b543ae0800000000000000
+      internalID: -1570530255564523446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9115de68ce8acbdf0800000000000000
+      internalID: -163069752662732519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_14
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50f7ee0a98da4030800000000000000
+      internalID: 3479831818283774046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_15
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c518346a14195d760800000000000000
+      internalID: 7482046067094290780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_16
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14847afd0c180d3e0800000000000000
+      internalID: -2030980766558107583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_17
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd39587f86fe9fc80800000000000000
+      internalID: -8288330405090323493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_18
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce636ea1fadc9f90800000000000000
+      internalID: -6945435793764421951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_19
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c34bc56c62b48210800000000000000
+      internalID: 1334387568242541506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_20
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4448ee7d9ec9180800000000000000
+      internalID: -9107147232821099310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_21
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c25243f1a8a446e0800000000000000
+      internalID: -1854171733045390654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_22
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1580fb71212eb6e0800000000000000
+      internalID: -1819980771714104035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_on_23
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 0
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3642280285fb1b80800000000000000
+      internalID: -8422868739235363265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      light_on_0: -1959136714395823900
+      light_on_1: -4819715033892480671
+      light_on_10: 7377843308690042363
+      light_on_11: 606084908141719690
+      light_on_12: -1570530255564523446
+      light_on_13: -163069752662732519
+      light_on_14: 3479831818283774046
+      light_on_15: 7482046067094290780
+      light_on_16: -2030980766558107583
+      light_on_17: -8288330405090323493
+      light_on_18: -6945435793764421951
+      light_on_19: 1334387568242541506
+      light_on_2: -1065860624559444857
+      light_on_20: -9107147232821099310
+      light_on_21: -1854171733045390654
+      light_on_22: -1819980771714104035
+      light_on_23: -8422868739235363265
+      light_on_3: -1270771958199794960
+      light_on_4: 4537720778404487952
+      light_on_5: 6076966675592461052
+      light_on_6: -8868391940205187236
+      light_on_7: 1980107169864640334
+      light_on_8: 1798509440284664542
+      light_on_9: -40895175553780645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a9ca50c074abf4099aee016ba8f726, type: 3}
   m_Name: Old Photo
   m_EditorClassIdentifier: Assembly-CSharp::ItemCardData
+  disposable: 0
   _cardName: Old Photo
-  _cardImage: {fileID: 0}
+  _cardImage: {fileID: 1084032668911633916, guid: d2ebcf9078b354c71863f14a17a3b24b, type: 3}
+  _copies: 2
+  original: {fileID: 0}
   _plus: 5
+  _description: 
+  _combo: {fileID: 11400000, guid: a5e28efd1c095844199ff512cda89949, type: 2}
+  comboDisabled: 0
+  plusModified: 0
+  bonusPlus: 0

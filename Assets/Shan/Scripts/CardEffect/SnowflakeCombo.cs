@@ -3,9 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SnowflakeCombo", menuName = "Scriptable Objects/Combo/SnowflakeCombo")]
 public class SnowflakeCombo : Combo
 {
-    public override void Execute(ItemCardData cd = null)
+    public override void OnCardPlay(ItemCardData cd = null)
     {
-        LevelManager.instance.rewardCnt++;
-        base.Execute(cd);
+        base.OnCardPlay(cd);
+        LevelManager.instance.earnedItemCards.Add(Instantiate(cd));
     }
 }

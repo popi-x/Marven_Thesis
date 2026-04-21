@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05787424b9f4c8045bbd56fcb6b748fd, type: 3}
   m_Name: GluttonyLM
   m_EditorClassIdentifier: Assembly-CSharp::GluttonyLM
+  tempName: Gluttony
+  tags: 
+  characterSprite: {fileID: 21300000, guid: c92fa79b897cccb4cb5b8b1c18176170, type: 3}
+  effectName: Gluttony
+  effectDescription: Some effect for Gluttony
   _extra: 10

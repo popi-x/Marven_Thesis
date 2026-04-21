@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a9ca50c074abf4099aee016ba8f726, type: 3}
   m_Name: Free Time
   m_EditorClassIdentifier: Assembly-CSharp::ItemCardData
+  disposable: 0
   _cardName: Free Time
-  _cardImage: {fileID: 0}
+  _cardImage: {fileID: 5486848398338408213, guid: 62d4d5736c8e74ff69739f0aa092bf90, type: 3}
+  _copies: 2
+  original: {fileID: 0}
   _plus: 5
+  _description: 
+  _combo: {fileID: 11400000, guid: 313debb06c890364abc0a780c68b3269, type: 2}
+  comboDisabled: 0
+  plusModified: 0
+  bonusPlus: 0

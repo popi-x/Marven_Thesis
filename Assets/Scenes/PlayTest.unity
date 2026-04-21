@@ -159,18 +159,22 @@ MonoBehaviour:
   playedEventCards: []
   playedItemCards: []
   rewardCnt: 2
+  shopRefreshTimes: 0
+  maxCardsBought: 10
+  shopCardAmt: 4
+  token: {fileID: 11400000, guid: 10b40e150c93c4d8a835bf8b0c505b01, type: 2}
   totalMult: 1
   totalPlus: 0
   _targetScore: 10
   _curScore: 0
   _curLevelState: 1
   _OwnedEventCards: []
-  _OwnedItemCards:
-  - {fileID: 0}
-  - {fileID: 0}
+  _OwnedItemCards: []
   _earnedItemCards: []
   _rewardItemCard: []
   _badRewardItemCard: {fileID: 0}
+  _LM: {fileID: 11400000, guid: 7b3adbe28c7444e4b8a386e831332f4e, type: 2}
+  cardBoughtCnt: 0
 --- !u!4 &1424265721
 Transform:
   m_ObjectHideFlags: 0

@@ -10,13 +10,14 @@ public class SlothLM : LevelModifier
 
     public override void Apply()
     {
-        LevelManager.instance.money = _money;
+        Player.instance.money = _money;
 
     }
 
-    public override void OnItemCardPlayed()
+    public override void DoublePlus()
     {
-        LevelManager.instance.totalMult *= _pMult;
+        LevelManager.instance.totalPlus *= _pMult;
+    
     }
 
 

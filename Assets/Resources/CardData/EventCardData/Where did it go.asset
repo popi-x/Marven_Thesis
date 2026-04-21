@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bb0ef6d6fd421439697856a171e255, type: 3}
   m_Name: Where did it go
   m_EditorClassIdentifier: Assembly-CSharp::EventCardData
+  disposable: 0
   _cardName: Where did it go?
-  _cardImage: {fileID: 0}
-  _price: 2
+  _cardImage: {fileID: -6674598002638512057, guid: 95dbc937c43274125b2cbfc198d6f068, type: 3}
+  _copies: 2
+  original: {fileID: 0}
+  _price: 3
   _mult: 2
   _tags: 
   _itemCard: {fileID: 11400000, guid: 66d2f829d1808ee46a26ffcdd3c7cdb9, type: 2}
   _narrration: 
+  priceModified: 0
+  multModified: 0

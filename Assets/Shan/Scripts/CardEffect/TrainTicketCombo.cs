@@ -6,12 +6,30 @@ public class TrainTicketCombo: Combo
     [SerializeField] private ItemCardData _partner;
     [SerializeField] private int _plusAmount = 10;
 
-    public override void Execute(ItemCardData cd = null)
+    public override void OnCardPlay(ItemCardData cd = null)
     {
-        base.Execute(cd);
-        if (LevelManager.instance.playedItemCards.Contains(_partner))
+        base.OnCardPlay();
+        if (cd.bonusPlus > 0)
         {
-            LevelManager.instance.totalPlus += _plusAmount;
+            LevelManager.instance.totalPlus += cd.bonusPlus;
+            return;
+        }
+        foreach (var card in Player.instance.itemCardDeck)
+            if (card.original == _partner.original)
+                card.bonusPlus = _plusAmount; 
+        LevelManager.OnICPlayed += HandlePartnerPlayed;
+    }
+
+    private void HandlePartnerPlayed(ItemCardData card)
+    {
+        if (card.original == _partner.original)  
+        {
+            foreach (var c in Player.instance.itemCardDeck)
+                if (c.combo is TyLetterCombo)
+                    c.bonusPlus = 0;
+            LevelManager.OnICPlayed -= HandlePartnerPlayed;
         }
     }
+
 }
+

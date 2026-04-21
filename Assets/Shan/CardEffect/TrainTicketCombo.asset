@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TrainTicketCombo
   m_EditorClassIdentifier: Assembly-CSharp::TrainTicketCombo
   canPlay: 1
-  _partner: {fileID: 0}
+  _partner: {fileID: 11400000, guid: 9ca3b92fdd3424649a7f21a8cc72d8ab, type: 2}
   _plusAmount: 10

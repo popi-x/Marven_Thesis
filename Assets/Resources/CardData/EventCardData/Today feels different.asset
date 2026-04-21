@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bb0ef6d6fd421439697856a171e255, type: 3}
   m_Name: Today feels different
   m_EditorClassIdentifier: Assembly-CSharp::EventCardData
+  disposable: 0
   _cardName: Today feels different
-  _cardImage: {fileID: 0}
-  _price: 2
+  _cardImage: {fileID: 8628548875337833406, guid: 6fee9c17a0a8d43ed8e3144b9bf24e90, type: 3}
+  _copies: 2
+  original: {fileID: 0}
+  _price: 1
   _mult: 1.5
   _tags: 
   _itemCard: {fileID: 11400000, guid: eb4005c368fa84facbfe6c63ccd03506, type: 2}
   _narrration: 
+  priceModified: 0
+  multModified: 0

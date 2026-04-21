@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bb0ef6d6fd421439697856a171e255, type: 3}
   m_Name: Look, it's snowing outside
   m_EditorClassIdentifier: Assembly-CSharp::EventCardData
+  disposable: 0
   _cardName: Look, it's snowing outside
-  _cardImage: {fileID: 0}
+  _cardImage: {fileID: 2768666326311423946, guid: 7abb431890f9b4fbcb497b7adfddeff0, type: 3}
+  _copies: 2
+  original: {fileID: 0}
   _price: 2
   _mult: 1.5
   _tags: 02000000
   _itemCard: {fileID: 11400000, guid: 3f603feb7c3288f438d7afd598975a45, type: 2}
   _narrration: 
+  priceModified: 0
+  multModified: 0

@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bb0ef6d6fd421439697856a171e255, type: 3}
   m_Name: "No, I don\u2019t want to go"
   m_EditorClassIdentifier: Assembly-CSharp::EventCardData
+  disposable: 0
   _cardName: "No, I don\u2019t want to go"
-  _cardImage: {fileID: 0}
-  _price: 2
+  _cardImage: {fileID: 6166818524090342657, guid: 371e68c420a304c71af7d09bee1a1a13, type: 3}
+  _copies: 2
+  original: {fileID: 0}
+  _price: 4
   _mult: 2
   _tags: 
   _itemCard: {fileID: 11400000, guid: 9ca3b92fdd3424649a7f21a8cc72d8ab, type: 2}
   _narrration: 
+  priceModified: 0
+  multModified: 0

@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bb0ef6d6fd421439697856a171e255, type: 3}
   m_Name: The train leaves in half an hour
   m_EditorClassIdentifier: Assembly-CSharp::EventCardData
+  disposable: 0
   _cardName: The train leaves in half an hou
-  _cardImage: {fileID: 0}
-  _price: 2
+  _cardImage: {fileID: 5597848993665594913, guid: 47588ba73e8b6440abaf7bb18a4019e4, type: 3}
+  _copies: 2
+  original: {fileID: 0}
+  _price: 4
   _mult: 3
   _tags: 
   _itemCard: {fileID: 11400000, guid: f34f50cfc0a1b0d46a493fd23d68bf9e, type: 2}
   _narrration: 
+  priceModified: 0
+  multModified: 0

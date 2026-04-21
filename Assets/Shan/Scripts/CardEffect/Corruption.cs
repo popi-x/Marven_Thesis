@@ -3,21 +3,24 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Corruption", menuName = "Scriptable Objects/Combo/Corruption")]
 public class Corruption : Combo
 {
-    public override void Execute(ItemCardData cd = null)
+    public override void OnCardPlay(ItemCardData cd = null)
     {
         if (cd is BadItemCardData bd)
         {
-            if (bd.isCorrupted)
+            // CHANGED: increment first, then check — was checking before incrementing
+            bd.corruptionCnt++;
+            if (bd.corruptionCnt >= 4)
+                GameManager.instance.Corrupt();
+
+            if (GameManager.instance.isCorrupted)
             {
-                Debug.Log("This card is corrupted");
                 LevelManager.instance.totalMult += bd.plus;
                 LevelManager.instance.targetScore *= bd.scoreMult;
             }
             else
             {
-                bd.corruptionCnt++;
                 Debug.Log("This card will corrupt after " + (4 - bd.corruptionCnt) + " more uses.");
-                base.Execute(cd);
+                base.OnCardPlay(cd);
             }
         }
     }

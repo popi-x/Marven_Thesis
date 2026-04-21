@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a9ca50c074abf4099aee016ba8f726, type: 3}
   m_Name: Handmade Doll
   m_EditorClassIdentifier: Assembly-CSharp::ItemCardData
+  disposable: 0
   _cardName: Handmade Doll
-  _cardImage: {fileID: 0}
+  _cardImage: {fileID: 7416533431168013, guid: 844035c744b394a27b70c35f088d1993, type: 3}
+  _copies: 2
+  original: {fileID: 0}
   _plus: 8
+  _description: 
+  _combo: {fileID: 11400000, guid: 844a5702ff939e54aa5a58333efcfb4e, type: 2}
+  comboDisabled: 0
+  plusModified: 0
+  bonusPlus: 0

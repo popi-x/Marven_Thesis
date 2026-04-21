@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bb0ef6d6fd421439697856a171e255, type: 3}
   m_Name: Cheers
   m_EditorClassIdentifier: Assembly-CSharp::EventCardData
+  disposable: 0
   _cardName: Cheers
-  _cardImage: {fileID: 0}
-  _price: 2
+  _cardImage: {fileID: -5305621427572939632, guid: 085060a147cd843e9ba1424a1efe32b1, type: 3}
+  _copies: 2
+  original: {fileID: 0}
+  _price: 1
   _mult: 1.5
   _tags: 
   _itemCard: {fileID: 11400000, guid: df5de9564436549a5a80d36d84cfb8f7, type: 2}
   _narrration: 
+  priceModified: 0
+  multModified: 0

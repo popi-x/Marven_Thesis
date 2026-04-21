@@ -12,10 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bb0ef6d6fd421439697856a171e255, type: 3}
   m_Name: Behold the stars
   m_EditorClassIdentifier: Assembly-CSharp::EventCardData
+  disposable: 0
   _cardName: Behold the stars
-  _cardImage: {fileID: 0}
-  _price: 2
+  _cardImage: {fileID: 1422462462983533904, guid: 2f6fe1848ccac4659b69b749935b6e3c, type: 3}
+  _copies: 1
+  original: {fileID: 0}
+  _price: 5
   _mult: 3
   _tags: 
   _itemCard: {fileID: 11400000, guid: 94455748daa884cd1a2920e754d2b508, type: 2}
   _narrration: 
+  priceModified: 0
+  multModified: 0
