@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
             Corrupt();
 
         LM.enemy = enemyOrder[currentLevel];
-        LM.rewardNormalCard = rewardCardList[currentLevel];
+        LM.rewardNormalCard = (ItemCardData)rewardCardList[currentLevel].GetCopy();
         LM.rewardBadCard = LM.enemy.bcd;
         LM.targetScore = targetScoreList[currentLevel];
         LM.StartLevel();

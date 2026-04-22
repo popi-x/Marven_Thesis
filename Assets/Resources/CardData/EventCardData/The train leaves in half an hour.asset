@@ -19,8 +19,8 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 4
   _mult: 3
-  _tags: 
+  _tags: 0200000001000000
   _itemCard: {fileID: 11400000, guid: f34f50cfc0a1b0d46a493fd23d68bf9e, type: 2}
-  _narrration: 
+  _narrration: "A ticket to the unknown. A journey for one. It\u2019s time to go."
   priceModified: 0
   multModified: 0

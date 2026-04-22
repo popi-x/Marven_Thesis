@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 1
   _mult: 1.5
-  _tags: 
+  _tags: 00000000
   _itemCard: {fileID: 11400000, guid: bac58e15ef7d142b6af347dea411c0bb, type: 2}
-  _narrration: 
+  _narrration: "I found a sticker on the toolbox. I must have put it there one summer
+    when I was a kid. It\u2019s still so cute."
   priceModified: 0
   multModified: 0

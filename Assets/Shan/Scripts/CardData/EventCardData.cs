@@ -35,7 +35,7 @@ public class EventCardData : CardData
     {
         var LM = LevelManager.instance;
         LM.totalMult *= _mult;
-        // removed LM.playedEventCards.Add(this) cuz drop zone handles list tracking
+        LM.playedEventCards.Add(this);
 
         // CHANGED: added null check — _itemCard may be null for cards that don't award an item.
         // Original (no guard): LM.earnedItemCards.Add(_itemCard);

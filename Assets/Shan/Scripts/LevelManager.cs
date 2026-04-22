@@ -13,7 +13,6 @@ public class LevelManager : MonoBehaviour
     public static event Action<EventCardData> OnECPlayed;
     public static event Action<ItemCardData> OnICPlayed;
     public static event Action OnLevelEnd;
-
     public static event Action<List<ItemCardData>> OnRewardReady;
     public static event Action OnEnvyTrigger;
     public static event Action<bool> OnResultReady; // true = win, false = lose
@@ -59,6 +58,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private List<ItemCardData> _rewardItemCard;
     [SerializeField] private ItemCardData _badRewardItemCard;
 
+    [Header("Debug settings")]
+    [SerializeField] private ItemCardData _addToHandItemCard;
+    [SerializeField] private EventCardData _addToHandEventCard;
+
     private int _lastEnvyThreshold = 1;
 
     // The target score as it stood right after enemy.Apply() — restored every
@@ -89,6 +92,27 @@ public class LevelManager : MonoBehaviour
         _curScore = 0;
         _lastEnvyThreshold = 1;
 
+    }
+
+    //for debug use: adds the specified card to hand by clicking three dots in the top right corner of the component
+    [ContextMenu("Add Item Card to Hand")]
+    public void AddItemCardToHand()
+    {
+        if (_addToHandItemCard != null)
+        {
+            Player.instance.itemCardDeck.Add((ItemCardData)_addToHandItemCard.GetCopy());
+            handUI?.Rebuild();
+        }
+    }
+
+    [ContextMenu("Add Event Card to Hand")]
+    public void AddEventCardToHand()
+    {
+        if (_addToHandEventCard != null)
+        {
+            Player.instance.eventCardDeck.Add((EventCardData)_addToHandEventCard.GetCopy());
+            handUI?.Rebuild();
+        }
     }
 
     public void StartLevel()
@@ -176,6 +200,10 @@ public class LevelManager : MonoBehaviour
         envyMult = 0;
         _curScore = 0;
         _lastEnvyThreshold = 1;
+
+        //Clear event subscriptions
+
+
 
         // refresh UI
         buildUI?.ClearSlots();

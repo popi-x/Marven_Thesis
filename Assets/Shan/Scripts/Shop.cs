@@ -36,7 +36,7 @@ public class Shop : MonoBehaviour
         maxBuyCnt = _defaultMaxBuyCnt;
         refreshCost = _defaultRefreshCost;
         cardCnt = _defaultCardCnt;
-        freeRefreshCnt = 0;
+        //freeRefreshCnt = 0;
 
         //CardDeckManager.instance.DiscardCard(card);
 

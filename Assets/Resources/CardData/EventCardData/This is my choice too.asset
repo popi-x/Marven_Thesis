@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 3
   _mult: 1.5
-  _tags: 
+  _tags: 02000000
   _itemCard: {fileID: 11400000, guid: 7a2b8de36ef3a3d42b4aad8e4cfdb677, type: 2}
-  _narrration: 
+  _narrration: "Things didn\u2019t turn out the way I expected, but I didn\u2019t
+    blame myself."
   priceModified: 0
   multModified: 0

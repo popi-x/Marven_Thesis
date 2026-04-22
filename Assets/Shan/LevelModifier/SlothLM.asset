@@ -16,6 +16,8 @@ MonoBehaviour:
   tags: 
   characterSprite: {fileID: 21300000, guid: 6bfd6b2fdc2face419e479e63f58ab54, type: 3}
   effectName: Sloth
-  effectDescription: Some effect for Sloth
+  effectDescription: 'No coins this turn.
+
+    Item plus is doubled.'
   _money: 1
   _pMult: 2

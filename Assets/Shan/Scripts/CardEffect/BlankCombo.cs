@@ -3,12 +3,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BlankCombo", menuName = "Scriptable Objects/Combo/BlankCombo")]
 public class BlankCombo : Combo
 {
-    public override void OnCardSubmit(ItemCardData cd = null)
+    public override void OnCardPlay(ItemCardData cd = null)
     {
-        var LM = LevelManager.instance;
-        if (LM.totalPlus - cd.plus < 8)
+        LevelManager LM = LevelManager.instance;
+        if (LM.playedItemCards != null && LM.playedItemCards[-1].plus < 8)
         {
-            LM.totalPlus += 15 - cd.plus;
+            cd.bonusPlus = 15 - cd.plus;
         }
+        base.OnCardPlay(cd);
+        LM.totalPlus += cd.bonusPlus;
     }
+
+    
 }

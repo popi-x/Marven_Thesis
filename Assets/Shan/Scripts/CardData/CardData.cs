@@ -33,6 +33,15 @@ public abstract class CardData : ScriptableObject
         {
             p.itemCardDeck.Remove(this as ItemCardData);
         }
+
+        Destroy(this);
+    }
+
+    public CardData GetCopy()
+    {
+        var copy = Instantiate(this);
+        copy.original = this;
+        return copy;
     }
 
 

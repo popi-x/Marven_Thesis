@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 5
   _mult: 3
-  _tags: 
+  _tags: 0000000001000000
   _itemCard: {fileID: 11400000, guid: 94455748daa884cd1a2920e754d2b508, type: 2}
-  _narrration: 
+  _narrration: "My parents and I suddenly decided to go to the suburbs to watch the
+    stars. I haven\u2019t been this happy in a long time."
   priceModified: 0
   multModified: 0

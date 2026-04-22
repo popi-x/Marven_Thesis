@@ -21,6 +21,12 @@ public class SodaIceCombo : Combo
         LevelManager.OnICPlayed += HandleLetterPlayed;
     }
 
+    public override void OnCardSubmit(ItemCardData cd = null)
+    {
+        LevelManager.OnICPlayed -= HandleLetterPlayed;
+        base.OnCardSubmit(cd);
+    }
+
     private void HandleLetterPlayed(ItemCardData card)
     {
         if (card.original == _partner.original)  

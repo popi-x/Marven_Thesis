@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 3
   _mult: 1.5
-  _tags: 
+  _tags: 01000000
   _itemCard: {fileID: 11400000, guid: 7a2b8de36ef3a3d42b4aad8e4cfdb677, type: 2}
-  _narrration: 
+  _narrration: A tiny bug by the window. I watched it for so long. I am the only
+    human who knows you exist.
   priceModified: 0
   multModified: 0

@@ -18,7 +18,7 @@ public class WrathLM : LevelModifier
         if (itemDeck.Count == 0) return;
 
         int randomIndex = Random.Range(0, itemDeck.Count);
-        CardDeckManager.instance.DiscardCard(itemDeck[randomIndex]);
+        Destroy(itemDeck[randomIndex]);
         itemDeck.RemoveAt(randomIndex);
     }
 }

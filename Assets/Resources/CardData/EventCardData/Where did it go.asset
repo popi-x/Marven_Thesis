@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 3
   _mult: 2
-  _tags: 
+  _tags: 0000000001000000
   _itemCard: {fileID: 11400000, guid: 66d2f829d1808ee46a26ffcdd3c7cdb9, type: 2}
-  _narrration: 
+  _narrration: "I turned the house upside down for an old photo. It\u2019s a mess,
+    but I found you at last."
   priceModified: 0
   multModified: 0

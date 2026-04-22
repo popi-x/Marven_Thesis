@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 2
   _mult: 1.5
-  _tags: 02000000
+  _tags: 00000000
   _itemCard: {fileID: 11400000, guid: 3f603feb7c3288f438d7afd598975a45, type: 2}
-  _narrration: 
+  _narrration: "The world is white outside. Wrapped in a heavy quilt, I\u2019ve tucked
+    away all the cold. This is my own little world."
   priceModified: 0
   multModified: 0

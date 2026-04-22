@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 2
   _mult: 1.5
-  _tags: 
-  _itemCard: {fileID: 11400000, guid: 10b40e150c93c4d8a835bf8b0c505b01, type: 2}
-  _narrration: 
+  _tags: 0000000001000000
+  _itemCard: {fileID: 11400000, guid: b544ca8fecfa940bebdfaddc49887f55, type: 2}
+  _narrration: Nothing was accomplished today. Yet, I shall sleep on time without
+    regret.
   priceModified: 0
   multModified: 0

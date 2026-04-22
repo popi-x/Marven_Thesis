@@ -19,5 +19,6 @@ public class CrystalCombo : Combo
         var lastPlayedCard = playedItemCards[playedItemCards.Count - 1];
         LevelManager.instance.totalMult *= lastPlayedCard.plus;
         LevelManager.instance.totalPlus -= lastPlayedCard.plus;
+        playedItemCards.Add(cd);
     }
 }

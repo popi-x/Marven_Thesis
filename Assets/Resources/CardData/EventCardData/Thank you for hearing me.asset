@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 4
   _mult: 3
-  _tags: 
+  _tags: 0200000001000000
   _itemCard: {fileID: 11400000, guid: d63cb237effb14fea971d2552369bc81, type: 2}
-  _narrration: 
+  _narrration: Sitting on a bench under a tree, watching the sunset, I talked with
+    a stranger for a long time. They really listened to me.
   priceModified: 0
   multModified: 0

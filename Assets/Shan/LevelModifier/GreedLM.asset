@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GreedLM
   tempName: 
   tags: 
-  characterSprite: {fileID: 0}
-  effectName: 
-  effectDescription: 
+  characterSprite: {fileID: 21300000, guid: 83087bb9ec91baf4ebf61ead19fc1182, type: 3}
+  effectName: Greed
+  effectDescription: 'Shop shows 7 Event cards,
+
+    but you can only buy 2 of them.'
   _amt: 7
   _cardLimit: 2

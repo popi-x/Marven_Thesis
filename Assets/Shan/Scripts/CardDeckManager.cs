@@ -68,6 +68,7 @@ public class CardDeckManager : MonoBehaviour
         _badDiscardPile.Clear();
     }
 
+
     //ADDED:called when the game is reset
     public void GameReset()
     {

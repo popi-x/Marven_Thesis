@@ -20,6 +20,12 @@ public class TyLetterCombo: Combo
         LevelManager.OnICPlayed += HandleSodaICePlayed;
     }
 
+    public override void OnCardSubmit(ItemCardData cd = null)
+    {
+        LevelManager.OnICPlayed -= HandleSodaICePlayed;
+        base.OnCardSubmit(cd);
+    }
+
     private void HandleSodaICePlayed(ItemCardData card)
     {
         if (card.original == _partner.original)  

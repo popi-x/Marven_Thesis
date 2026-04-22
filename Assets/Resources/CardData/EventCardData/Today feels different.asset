@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 1
   _mult: 1.5
-  _tags: 
+  _tags: 02000000
   _itemCard: {fileID: 11400000, guid: eb4005c368fa84facbfe6c63ccd03506, type: 2}
-  _narrration: 
+  _narrration: "Woke up to a gravity-defying hairstyle. It\u2019s absurd, it\u2019s
+    funny\u2014it\u2019s fashion."
   priceModified: 0
   multModified: 0

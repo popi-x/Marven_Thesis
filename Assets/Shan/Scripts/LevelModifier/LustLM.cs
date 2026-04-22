@@ -35,8 +35,7 @@ public class LustLM : LevelModifier
         int randomIndex = Random.Range(0, itemDeck.Count);
         ItemCardData removed = itemDeck[randomIndex];
         itemDeck.RemoveAt(randomIndex);
-        CardDeckManager.instance.DiscardCard(removed);
-        // CHANGED: removed Destroy(removed) — DiscardCard() already destroys it internally
+        Destroy(removed);
     }
 
 }

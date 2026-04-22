@@ -29,6 +29,7 @@ public class FreeTimeCombo : Combo
         {
             Shop.instance.freeRefreshCnt += _cnt;
         }
+        LevelManager.OnICPlayed -= HandlePartnerPlayed;
     }
 
     private void HandlePartnerPlayed(ItemCardData card)
@@ -36,7 +37,7 @@ public class FreeTimeCombo : Combo
         if (card.original == _partner.original)  
         {
             foreach (var c in Player.instance.itemCardDeck)
-                if (c.combo is TyLetterCombo)
+                if (c.original == _partner.original)
                     c.bonusPlus = 0;
             LevelManager.OnICPlayed -= HandlePartnerPlayed;
         }

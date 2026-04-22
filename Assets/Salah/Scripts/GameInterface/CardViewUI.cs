@@ -32,13 +32,13 @@ public class CardViewUI : MonoBehaviour
         if (data is EventCardData ec)
         {
             if (typeBadge) typeBadge.text = "EVENT";
-            if (line1) line1.text = $"Cost: {ec.price}   Mult: x{ec.mult}";
+            if (line1) line1.text = $"{ec.mult}";
             if (line2) line2.text = string.IsNullOrEmpty(ec.narration) ? "" : ec.narration;
         }
         else if (data is ItemCardData ic)
         {
             if (typeBadge) typeBadge.text = "ITEM";
-            if (line1) line1.text = $"+{ic.plus}";
+            if (line1) line1.text = $"{ic.plus}";
             if (line2) line2.text = string.IsNullOrEmpty(ic.description) ? "" : ic.description;
         }
         else

@@ -21,6 +21,7 @@ MonoBehaviour:
   _mult: 2
   _tags: 0000000001000000
   _itemCard: {fileID: 11400000, guid: 7dad86e7529deb14ab60d68456efef55, type: 2}
-  _narrration: 
+  _narrration: "A new duty as a \"scooper\" begins. It seems I\u2019ve found one
+    more reason to remain in this world."
   priceModified: 0
   multModified: 0

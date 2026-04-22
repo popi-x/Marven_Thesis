@@ -24,15 +24,15 @@ public class ShopPreviewController : MonoBehaviour
 
     [Header("Overlay")]
     [SerializeField] private CanvasGroup overlayGroup;
-    [SerializeField] private float       overlayAlpha = 0.4f;
+    [SerializeField] private float overlayAlpha = 0.4f;
 
     [Header("Preview Card")]
     [SerializeField] private RectTransform previewCardRT;   // centred card holder
-    [SerializeField] private CardViewUI    previewCardView;
-    [SerializeField] private float         previewScale = 2.5f;
+    [SerializeField] private CardViewUI previewCardView;
+    [SerializeField] private float previewScale = 2.5f;
 
     [Header("Buy Button")]
-    [SerializeField] private Button   buyButton;
+    [SerializeField] private Button buyButton;
     [SerializeField] private TMP_Text buyLabel;
 
     [Header("Fly target")]
@@ -41,13 +41,13 @@ public class ShopPreviewController : MonoBehaviour
 
     [Header("Timings")]
     [SerializeField] private float openDuration = 0.2f;
-    [SerializeField] private float flyDuration  = 0.4f;
+    [SerializeField] private float flyDuration = 0.4f;
 
     private EventCardData _card;
-    private int           _index;
-    private bool          _isOpen;
-    private Coroutine     _routine;
-    private CanvasGroup   _cardCG;
+    private int _index;
+    private bool _isOpen;
+    private Coroutine _routine;
+    private CanvasGroup _cardCG;
 
     // ── Lifecycle ─────────────────────────────────────────────────────────────
 
@@ -78,8 +78,8 @@ public class ShopPreviewController : MonoBehaviour
     public void OpenPreview(EventCardData card, int shopIndex)
     {
         if (_isOpen) return;
-        _card   = card;
-        _index  = shopIndex;
+        _card = card;
+        _index = shopIndex;
         _isOpen = true;
 
         ShowPanel();
@@ -89,12 +89,12 @@ public class ShopPreviewController : MonoBehaviour
 
         // Buy button
         bool canAfford = Player.instance.money >= card.price;
-        if (buyButton != null)  buyButton.interactable = canAfford;
-        if (buyLabel  != null)  buyLabel.text          = $"Buy  ({card.price}g)";
+        if (buyButton != null) buyButton.interactable = canAfford;
+        if (buyLabel != null) buyLabel.text = $"{card.price}";
 
         // Reset visual state before animating
-        overlayGroup.alpha          = 0f;
-        previewCardRT.localScale    = Vector3.one;
+        overlayGroup.alpha = 0f;
+        previewCardRT.localScale = Vector3.one;
         if (_cardCG != null) _cardCG.alpha = 1f;
 
         if (_routine != null) StopCoroutine(_routine);
@@ -105,14 +105,14 @@ public class ShopPreviewController : MonoBehaviour
     {
         for (float t = 0f; t < openDuration; t += Time.deltaTime)
         {
-            float p     = Mathf.Clamp01(t / openDuration);
+            float p = Mathf.Clamp01(t / openDuration);
             float eased = 1f - Mathf.Pow(1f - p, 3f);   // ease-out cubic
-            overlayGroup.alpha       = Mathf.Lerp(0f, overlayAlpha, eased);
+            overlayGroup.alpha = Mathf.Lerp(0f, overlayAlpha, eased);
             float s = Mathf.Lerp(1f, previewScale, eased);
             previewCardRT.localScale = new Vector3(s, s, 1f);
             yield return null;
         }
-        overlayGroup.alpha       = overlayAlpha;
+        overlayGroup.alpha = overlayAlpha;
         previewCardRT.localScale = Vector3.one * previewScale;
         _routine = null;
     }
@@ -134,7 +134,7 @@ public class ShopPreviewController : MonoBehaviour
     private IEnumerator BuyFlyRoutine()
     {
         // Fly card from screen centre toward hand, shrink + fade out
-        Vector3 startWorldPos  = previewCardRT.position;
+        Vector3 startWorldPos = previewCardRT.position;
         Vector3 targetWorldPos = handContent != null
             ? handContent.position
             : new Vector3(Screen.width * 0.5f, Screen.height * 0.1f, 0f);
@@ -143,15 +143,15 @@ public class ShopPreviewController : MonoBehaviour
 
         for (float t = 0f; t < flyDuration; t += Time.deltaTime)
         {
-            float p     = Mathf.Clamp01(t / flyDuration);
+            float p = Mathf.Clamp01(t / flyDuration);
             float eased = 1f - Mathf.Pow(1f - p, 3f);
 
-            previewCardRT.position   = Vector3.Lerp(startWorldPos, targetWorldPos, eased);
+            previewCardRT.position = Vector3.Lerp(startWorldPos, targetWorldPos, eased);
             float s = Mathf.Lerp(startScale.x, 0.8f, eased);
             previewCardRT.localScale = new Vector3(s, s, 1f);
             if (_cardCG != null)
-                _cardCG.alpha        = Mathf.Lerp(1f, 0f, eased);
-            overlayGroup.alpha       = Mathf.Lerp(overlayAlpha, 0f, eased);
+                _cardCG.alpha = Mathf.Lerp(1f, 0f, eased);
+            overlayGroup.alpha = Mathf.Lerp(overlayAlpha, 0f, eased);
             yield return null;
         }
 
@@ -170,13 +170,13 @@ public class ShopPreviewController : MonoBehaviour
 
     private IEnumerator CloseRoutine()
     {
-        float   startAlpha = overlayGroup.alpha;
+        float startAlpha = overlayGroup.alpha;
         Vector3 startScale = previewCardRT.localScale;
 
         for (float t = 0f; t < openDuration; t += Time.deltaTime)
         {
             float p = Mathf.Clamp01(t / openDuration);
-            overlayGroup.alpha       = Mathf.Lerp(startAlpha, 0f, p);
+            overlayGroup.alpha = Mathf.Lerp(startAlpha, 0f, p);
             float s = Mathf.Lerp(startScale.x, 1f, p);
             previewCardRT.localScale = new Vector3(s, s, 1f);
             yield return null;
@@ -193,8 +193,8 @@ public class ShopPreviewController : MonoBehaviour
 
     private void CloseImmediate()
     {
-        _isOpen  = false;
-        _card    = null;
+        _isOpen = false;
+        _card = null;
         _routine = null;
         HidePanel();
     }

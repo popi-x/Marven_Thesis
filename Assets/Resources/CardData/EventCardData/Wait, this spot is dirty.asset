@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 4
   _mult: 2
-  _tags: 00000000
+  _tags: 0000000002000000
   _itemCard: {fileID: 11400000, guid: 7a2b8de36ef3a3d42b4aad8e4cfdb677, type: 2}
-  _narrration: 
+  _narrration: A sudden urge to clean. I restored the room to its childhood glow,
+    scrubbing a stubborn stain for hours.
   priceModified: 0
   multModified: 0

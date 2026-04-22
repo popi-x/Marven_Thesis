@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 2
   _mult: 2.5
-  _tags: 
+  _tags: 01000000
   _itemCard: {fileID: 11400000, guid: bf9f6fc3a83cc407ba23685b6b794908, type: 2}
-  _narrration: 
+  _narrration: "A strange sound\u2014what was it? I never found the answer, but I
+    rang many doorbells and met several neighbors I had never spoken to before."
   priceModified: 0
   multModified: 0

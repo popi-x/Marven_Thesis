@@ -16,7 +16,8 @@ MonoBehaviour:
   tags: 
   characterSprite: {fileID: 21300000, guid: 3510413f035af6f459918a9483b9810b, type: 3}
   effectName: Envy
-  effectDescription: Some effect for Envy
+  effectDescription: "Higher mult increases shop costs.\nEvery +3 mult \u2192 Event
+    cost +1, Event mult +0.5."
   _envyMult: 3
   _extraCost: 1
   _extraMult: 0.5

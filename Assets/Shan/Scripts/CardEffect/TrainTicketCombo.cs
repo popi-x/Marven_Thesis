@@ -31,5 +31,11 @@ public class TrainTicketCombo: Combo
         }
     }
 
+    public override void OnCardSubmit(ItemCardData cd = null)
+    {
+        base.OnCardSubmit(cd);
+        LevelManager.OnICPlayed -= HandlePartnerPlayed;
+    }
+
 }
 

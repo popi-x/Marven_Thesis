@@ -16,5 +16,6 @@ MonoBehaviour:
   tags: 
   characterSprite: {fileID: 21300000, guid: c92fa79b897cccb4cb5b8b1c18176170, type: 3}
   effectName: Gluttony
-  effectDescription: Some effect for Gluttony
+  effectDescription: For each event card purchased in this round, target score increase
+    by 10.
   _extra: 10

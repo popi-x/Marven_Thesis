@@ -19,8 +19,9 @@ MonoBehaviour:
   original: {fileID: 0}
   _price: 4
   _mult: 2
-  _tags: 
+  _tags: 0000000002000000
   _itemCard: {fileID: 11400000, guid: 9ca3b92fdd3424649a7f21a8cc72d8ab, type: 2}
-  _narrration: 
+  _narrration: "I declined an invitation I dreaded. I felt like a \"villain\" for
+    a moment, but I\u2019ve never been happier."
   priceModified: 0
   multModified: 0
